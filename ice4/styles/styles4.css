@@ -1,0 +1,50 @@
+body{
+background-color: lightblue;
+text-align: center;
+}
+
+h1{
+    color:white;
+    
+      }
+      h1:hover{ color: #000;
+    
+      }
+
+
+.white{
+    color:white;
+}
+
+ol{
+ width: 400px;
+ margin: 0 auto   
+}
+
+li{
+    text-align: left;
+    padding: 10px;
+}
+img{
+    max-width: 500px;
+}
+
+
+
+img{
+display: block;  
+margin: 0 auto;  
+}
+
+
+p3{
+color: white;    
+}
+blockquote {
+width: auto;
+padding: 30px;
+color: white;
+text-align: center;
+margin:0 auto;
+
+}

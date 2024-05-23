@@ -1,0 +1,13 @@
+
+    body{
+        background-color: #696047;
+        text-align: center;
+    }
+    .local{
+    border-radius: 50%;
+    width: 20%;
+    margin:0 5%;
+    border-style: solid;
+    border-color: #640536;
+    border-width: 10px;
+    }

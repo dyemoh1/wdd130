@@ -1,226 +1,362 @@
-/* CSS - Name: "positionstyles.css" */
+/* CSS – Name: “positionstyles.css” */
 /* Activity 1 styles */
+
 .content1 {
   /* This is the parent of the activity 1 boxes. */
+  Display: grid;
+  Grid-template-columns: 1fr 1fr;
+  Justify-items: center;
+  Gap: 20px;
+}
+
+.red1 {
+  Width: 100%;
+  Height: 100px;
+  Background-color: red;
+  Grid-column: 1/3;
 
 }
-.red1 { 
-  width: 100px; 
-  height: 100px; 
-  background-color: red; 
 
-} 
 .green1 {
-  width: 100px; 
-  height: 100px; 
-  background-color: green; 
+  Width: 200px;
+  Height: 200px;
+  Background-color: green;
 
-} 
+}
+
 .yellow1 {
-  width: 100px; 
-  height: 100px; 
-  background-color: gold; 
-} 
+  Width: 200px;
+  Height: 200px;
+  Background-color: gold;
+}
+
 .blue1 {
-  width: 100px; 
-  height: 100px; 
-  background-color: blue; 
-} 
-/* Activity 2 styles */ 
+  Width: 100%;
+  Height: 100px;
+  Background-color: blue;
+  Grid-column: 1/3;
+}
+
+/* Activity 2 styles */
 .content2 {
   /* This is the parent of the activity 2 boxes. */
+  Display: grid;
+  Grid-template-columns: repeat(5, 50px);
+  Grid-template-rows: repeat(5, 50px);
+  Position: relative;
 }
+
 .red2 {
-  width: 100px; 
-  height: 100px; 
-  background-color: red; 
-} 
-.green2 { 
-  width: 100px; 
-  height: 100px; 
-  background-color: green; 
-} 
+  Width: 100px;
+  Grid-column: 1;
+  z-index: 4;
+  left: 0;
+  top: 0;
+  height: 100px;
+  background-color: red;
+}
+
+.green2 {
+  Grid-column: 2;
+  Grid-row: 2;
+  z-index: 3;
+  left: 30px;
+  top: 30px;
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+
 .yellow2 {
-  width: 100px; 
-  height: 100px; 
-  background-color: gold; 
-} 
+  Grid-column: 3;
+  Grid-row: 3;
+  Top: 60px;
+  Left: 60px;
+  z-index: 2;
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+}
+
 .blue2 {
-  width: 100px; 
-  height: 100px; 
-  background-color: blue; 
-} 
-/* Activity 3 styles */ 
+  Grid-column: 4;
+  Grid-row: 4;
+  z-index: 1;
+  left: 90px;
+  top: 90px;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+
+/* Activity 3 styles */
 .content3 {
+  Display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* Four equal columns */
+  Column-gap: 30px;
+  /* No gap between grid items */
+
   /* This is the parent of the activity 3 boxes. */
 }
+
 .red3 {
-  width: 100px; 
-  height: 100px; 
-  background-color: red; 
-} 
-.green3 {
-  width: 100px; 
-  height: 100px; 
-  background-color: green;
-} 
-.yellow3 {
-  width: 100px; 
-  height: 100px; 
-  background-color: gold; 
-} 
-.blue3 {
-  width: 100px;
-  height: 100px; 
-  background-color: blue; 
-} 
-/* Activity 4 styles */ 
-.content4 {
-  /* This is the parent of the activity 4 boxes. */
-  height: 400px;
+  Background-color: red;
+  Width: 100%;
+  Height: 100px;
+  Grid-column: 1/3;
+  /* Span all 3 columns */
+  Grid-row: 1/2;
+  /* First row */
 }
+
+.green3 {
+  Background-color: green;
+  Width: 100%;
+  Height: 200px;
+  Grid-column:1/2;
+  /* First column */
+  Grid-row: 2/3;
+  /* Second row */
+
+}
+
+.yellow3 {
+  Background-color: yellow;
+  Width: 100%;
+  Height: 200px;
+  Grid-column: 2/3;
+  /* Third column */
+  Grid-row: 2/3;
+  /* Second row */
+}
+
+.blue3 {
+  Background-color: blue;
+  Width: 100%;
+  Height: 100px;
+  Grid-column: 1/3;
+  /* Span all 3 columns */
+  Grid-row: 3/4;
+  /* Third row */
+}
+
+/* Activity 4 styles */
+.content4 {
+  Display: grid;
+  Grid-template-columns: 1fr 1fr;
+
+  Gap: 0;
+  /* This is the parent of the activity 4 boxes. */
+  Height: 400px;
+}
+
 .red4 {
-  width: 100px; 
-  height: 100px; 
-  background-color: red; 
-} 
+  Grid-column: 1/2;
+  Grid-row: 1/4;
+  Width: 100%;
+  Height: 100%;
+  Background-color: red;
+}
+
 .green4 {
-  width: 100px; 
-  height: 100px; 
-  background-color: green; 
-} 
+  Grid-column: 2/3;
+  Grid-row: 1/2;
+  Width: 100%;
+  Height: 100%;
+  Background-color: green;
+}
+
 .yellow4 {
-  width: 100px; 
-  height: 100px; 
-  background-color: gold; 
-} 
+  Grid-column: 2/3;
+  Grid-row: 2/3;
+  Width: 100%;
+  Height: 100%;
+  Background-color: gold;
+}
+
 .blue4 {
-  width: 100px; 
-  height: 100px; 
-  background-color: blue; 
-} 
-/* Activity 5 styles */ 
+  Width: 100%;
+  Grid-column: 2/3;
+  Grid-row:3/4;
+  Height: 100%;
+  Background-color: blue;
+}
+
+/* Activity 5 styles */
 .content5 {
   /* This is the parent of the activity 5 boxes. */
-  height: 400px;
+  Height: 400px;
+  Position: relative;
+  Width: 100%;
 }
-.red5 { 
-  width: 100px; 
-  height: 100px; 
-  background-color: red; 
-} 
-.green5 { 
-  width: 100px; 
-  height: 100px; 
-  background-color: green; 
 
-} 
+.red5 {
+  Width: 100%;
+  Height: 100px;
+  Background-color: red;
+  Position: absolute;
+  Top: 0;
+  Left: 0;
+
+}
+
+.green5 {
+  Width: 200px;
+  Height: 200px;
+  Background-color: green;
+  Position: absolute;
+  Top: 100px;
+  Left: 0;
+  z-index: 0;
+
+
+}
+
 .yellow5 {
-  width: 100px; 
-  height: 100px; 
-  background-color: gold; 
+  Width: calc(100% - 200px);
+  Height: 200px;
+  Background-color: gold;
+  Position: absolute;
+  Top: 100px;
+  Left: 100px;
+  Overflow: auto;
 
-} 
+}
+
 .blue5 {
-  width: 100px; 
-  height: 100px; 
-  background-color: blue; 
-} 
-/* Activity 6 styles */ 
+  Width: 100%;
+  Height: 100px;
+  Background-color: blue;
+  Position: absolute;
+  Bottom: 0;
+  Left: 0;
+}
+
+/* Activity 6 styles */
 .content6 {
+  Display: grid;
+  Grid-template-columns: 100px 100px 100px 100px 100px 100px;
+  Grid-template-rows: 100px 100px 100px 100px 100px;
+  Position: relative;
   /* This is the parent of the activity 6 boxes. */
 }
+
 .red6 {
-  width: 100px; 
-  height: 100px; 
-  background-color: red; 
-} 
+  Width: 100%;
+  Grid-column: 1/5;
+  Grid-row: 1/3;
+  Height: 100%;
+  Background-color: red;
+}
+
 .green6 {
-  width: 100px; 
-  height: 100px; 
-  background-color: green; 
-} 
+  Grid-column: 1/3;
+  Grid-row: 4/6;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: green;
+}
+
 .yellow6 {
-  width: 100px; 
-  height: 100px; 
-  background-color: gold; 
-} 
+  Grid-column: 5/7;
+  Grid-row: 3/6;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  background-color: gold;
+}
+
 .blue6 {
-  width: 100px; 
-  height: 100px; 
-  background-color: blue; 
-} 
+  Grid-row: 2/5;
+  Justify-items: center;
+  Grid-column: 2/6;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+}
 
 
 /* Do not make any changes below here */
 .activity {
-  width: 70%; 
-  margin: 20px auto; 
-  font-family: Arial, sans-serif; 
-  border: 1px solid black; 
-  padding: 10px; 
-  clear:both; 
-  overflow: auto;
-} 
+  Width: 70%;
+  Margin: 20px auto;
+  Font-family: Arial, sans-serif;
+  Border: 1px solid black;
+  Padding: 10px;
+  Clear: both;
+  Overflow: auto;
+}
 
 .hint {
-  border: 1px solid grey;
-  background: #e0e0e0;
-  padding: .5em;
-  position: relative;
-  margin: 1em 0;
+  Border: 1px solid grey;
+  Background: #e0e0e0;
+  Padding: .5em;
+  Position: relative;
+  Margin: 1em 0;
 }
+
 .hint h3 {
-  margin: 0;
+  Margin: 0;
 }
+
 .hint:hover {
-  background: #d0d0d0;
+  Background: #d0d0d0;
 }
-.hint > div {
-  display: none;
+
+.hint>div {
+  Display: none;
 }
 
 .hint input[type=checkbox] {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
+  Position: absolute;
+  Width: 100%;
+  Height: 100%;
+  Opacity: 0;
   z-index: 1;
   cursor: pointer;
 }
 
-.hint input[type=checkbox]:checked ~ div {
-  display: block;
+.hint input[type=checkbox]:checked~div {
+  Display: block;
 }
 
 .hint i {
-  position: absolute;
-  transform: translate(-6px, 0);
-  margin-top: 16px;
-  right: 10px;
-  top: -3px;
-}
-.hint i:before, .hint i:after {
-  content: "";
-  position: absolute;
-  background-color: black;
-  width: 3px;
-  height: 9px;
-}
-.hint i:before {
-  transform: translate(2px, 0) rotate(45deg);
-}
-.hint i:after {
-  transform: translate(-2px, 0) rotate(-45deg);
+  Position: absolute;
+  Transform: translate(-6px, 0);
+  Margin-top: 16px;
+  Right: 10px;
+  Top: -3px;
 }
 
-.hint input[type=checkbox]:checked ~ i:before {
-  transform: translate(-2px, 0) rotate(45deg);
+.hint i:before,
+.hint i:after {
+  Content: “”;
+  Position: absolute;
+  Background-color: black;
+  Width: 3px;
+  Height: 9px;
 }
-.hint input[type=checkbox]:checked ~ i:after {
-  transform: translate(2px, 0) rotate(-45deg);
+
+.hint i:before {
+  Transform: translate(2px, 0) rotate(45deg);
 }
+
+.hint i:after {
+  Transform: translate(-2px, 0) rotate(-45deg);
+}
+
+.hint input[type=checkbox]:checked~i:before {
+  Transform: translate(-2px, 0) rotate(45deg);
+}
+
+.hint input[type=checkbox]:checked~i:after {
+  Transform: translate(2px, 0) rotate(-45deg);
+}
+
 .hint a {
-  position: relative;
+  Position: relative;
   z-index: 1;
 }

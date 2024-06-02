@@ -187,51 +187,43 @@
 .content5 {
   /* This is the parent of the activity 5 boxes. */
   Height: 400px;
-  Position: relative;
-  Width: 100%;
-}
-
-.red5 {
-  Width: 100%;
-  Height: 100px;
-  Background-color: red;
-  Position: absolute;
-  Top: 0;
-  Left: 0;
+  
 
 }
+.red5 { 
+ Width: 100%;
+ Height: 100px;
+ Background-color: red;
+ 
 
-.green5 {
-  Width: 200px;
-  Height: 200px;
-  Background-color: green;
-  Position: absolute;
-  Top: 100px;
-  Left: 0;
-  z-index: 0;
+} 
+.green5 { 
+ Width: 150px;
+ Height: 140px;
+ Background-color: green;
+ Float: left;
+ 
+ 
 
 
-}
-
+} 
 .yellow5 {
-  Width: calc(100% - 200px);
-  Height: 200px;
-  Background-color: gold;
-  Position: absolute;
-  Top: 100px;
-  Left: 100px;
-  Overflow: auto;
+ Width: 100%; 
+ Height: 200px;
+ Background-color: gold;
 
-}
 
+
+} 
 .blue5 {
-  Width: 100%;
-  Height: 100px;
-  Background-color: blue;
-  Position: absolute;
-  Bottom: 0;
-  Left: 0;
+ Width: 100%;
+ Height: 100px;
+ Background-color: blue;
+ 
+
 }
+
+
 
 /* Activity 6 styles */
 .content6 {

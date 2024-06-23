@@ -163,3 +163,155 @@ nav a:hover {
   border-top: 1px solid;
   border-right: 1px solid;
 }
+.river-section {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  Margin-bottom: 40px;
+  Padding: 20px;
+  Background-color: #f9f9f9;
+  Border: 1px solid #ddd;
+}
+
+.river-section h2 {
+  Margin-bottom: 10px;
+  Color: #0056b3;
+}
+
+.river-section p {
+  Margin-bottom: 10px;
+  Line-height: 1.6;
+  Color: #333;
+}
+
+
+.card-img,
+.mountains {
+  Width: 100%;
+}
+
+.mountains {
+  Grid-column: 2/7;
+  Width: 100%;
+  Grid-row: 5/8;
+  Box-shadow: 5px 5px 10px white;
+}
+
+.rivers-card {
+  Grid-column: 2/4;
+  Grid-row: 2/3;
+}
+
+.camping-card {
+  Grid-column: 5/7;
+  Grid-row: 2/3;
+}
+
+.rapids-card {
+  Grid-column: 8/10;
+  Grid-row: 2/3;
+}
+
+.rivers-card,
+.camping-card,
+.rapids-card {
+  Margin: 200px 0;
+}
+
+#background {
+  Height: 725px;
+  Background-color: antiquewhite;
+  Grid-column: 1/11;
+  Grid-row: 4/9;
+}
+
+Footer {
+  Background-color: hsla(12, 9%, 89%, 0.459);
+  Color: white;
+  Padding: 25px 50px;
+  Margin-top: 200px;
+  Display: flex;
+  Justify-content: space-around;
+  Align-items: center;
+}
+
+Footer a {
+  Color: brown;
+  Text-decoration: none;
+}
+
+Footer p {
+  Font-size: 1.2em;
+}
+
+Footer p a:hover {
+  Text-decoration: underline;
+}
+
+Footer a:hover {
+  Color: rgba(0, 255, 255, 0.392);
+}
+
+Footer .social img {
+  Padding-top: 15px;
+}
+
+
+@media screen and (max-width: 900px) {
+
+  #hero,
+  .home-grid {
+      Display: block;
+      Height: auto;
+  }
+
+  Nav,
+  Footer {
+      Flex-direction: column;
+  }
+
+  Nav a {
+      Display: block;
+      Padding: 15px;
+  }
+
+  #hero {
+      Margin-top: 0;
+  }
+
+  #hero-msg {
+      Margin-top: 0;
+  }
+
+  #hero-msg h4 {
+      Display: none;
+  }
+
+  #hero-msg h1 {
+      Color: #6f7364;
+  }
+
+  .home-title {
+      Font-size: 25px;
+  }
+
+  .rivers-card,
+  .camping-card,
+  .rapids-card {
+      Margin: 50px auto;
+      Width: 60%;
+  }
+
+  #background {
+      Display: none;
+  }
+
+  .mountains,
+  .msg {
+      Width: 80%;
+      Display: block;
+      Margin: 0 auto;
+  }
+
+  Footer {
+      Margin-top: 25px;
+  }
+}
